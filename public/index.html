@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediaHost</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MediaHost</h1>
+      <p>Загрузи фото или видео — получи ссылку</p>
+    </header>
+
+    <form id="uploadForm">
+      <label class="upload-box">
+        <input type="file" id="mediaInput" accept="image/*,video/*" required />
+        Выбрать файл
+      </label>
+      <button type="submit">Загрузить</button>
+    </form>
+
+    <div id="previewContainer"></div>
+    <div id="linkContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
